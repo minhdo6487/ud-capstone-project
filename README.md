@@ -11,3 +11,5 @@ In this project, I applied the skills and knowledge I developed throughout the C
 - Building Kubernetes clusters
 - Building Docker containers in pipelines
 - Working in AWS
+
+## DEPLOY

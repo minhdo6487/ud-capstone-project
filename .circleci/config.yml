@@ -233,7 +233,7 @@ workflows:
             - test-build
           filters:
             branches:
-              only: [ master ]
+              only: [ main ]
       - deploy-infrastructure:
           filters:
             branches:

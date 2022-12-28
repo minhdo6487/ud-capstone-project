@@ -132,13 +132,15 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "e0:ba:fb:45:81:09:9e:e2:49:a9:e9:3c:af:65:9e:bd"
+            - [ "e0:ba:fb:45:81:09:9e:e2:49:a9:e9:3c:af:65:9e:bd" ]
       - attach_workspace:
           at: ~/
       - run:
           name: Install dependencies
           command: |
-            apk add --update ansible
+            apk add curl
+            apk add --upgrade bash
+            apk add --update ansible rsync
       - run:
           name: Configure server
           command: |
@@ -159,13 +161,15 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "e0:ba:fb:45:81:09:9e:e2:49:a9:e9:3c:af:65:9e:bd"
+            [ "e0:ba:fb:45:81:09:9e:e2:49:a9:e9:3c:af:65:9e:bd" ]
       - attach_workspace:
           at: ~/
       - run:
           name: Install dependencies
           command: |
-            apk add --update ansible
+            apk add curl
+            apk add --upgrade bash
+            apk add --update ansible rsync
       - run:
           name: Configure server
           command: |
@@ -209,7 +213,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "e0:ba:fb:45:81:09:9e:e2:49:a9:e9:3c:af:65:9e:bd"
+            - [ "e0:ba:fb:45:81:09:9e:e2:49:a9:e9:3c:af:65:9e:bd" ]
       - attach_workspace:
           at: ~/
       - run:

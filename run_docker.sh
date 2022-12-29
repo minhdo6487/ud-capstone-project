@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=minhdo6487/ud-capstone-project:v1 .
+docker buildx build --tag=minhdo6487/ud-capstone-project:v1 . --platform linux/amd64
 
 # Step 2:
 # List docker images

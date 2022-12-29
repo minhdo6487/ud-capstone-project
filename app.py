@@ -4,6 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    print("<h1 style='text-align: center;'>Hello World, my name is MinhDo. Welcome to my Cloud DevOps Engineer Capstone Project!</h1> ")
+    return
     return "<h1 style='text-align: center;'>Hello World, my name is MinhDo." \
            " Welcome to my Cloud DevOps Engineer Capstone Project!</h1>"
 

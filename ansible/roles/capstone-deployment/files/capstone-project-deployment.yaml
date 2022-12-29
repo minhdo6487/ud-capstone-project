@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: capstone-project-app
-          image: minhdo6487/capstone-project
+          image: minhdo6487/ud-capstone-project
           ports:
             - containerPort: 80

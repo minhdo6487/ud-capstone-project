@@ -11,8 +11,3 @@
       shell: "./bin/kubectl set image deployments/{{ ENVIRONMENT_NAME }}-deployment {{ ENVIRONMENT_NAME }}-app=minhdo6487/ud-capstone-project:v1"
       args:
         chdir: $HOME
-
-#    - name: Check if deployment ist successful
-#      shell: "./bin/kubectl rollout status deployments/{{ ENVIRONMENT_NAME }}-deployment"
-#      args:
-#        chdir: $HOME
